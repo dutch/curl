@@ -51,17 +51,17 @@ LIB_CFILES = altsvc.c amigaos.c asyn-ares.c asyn-thread.c base64.c            \
   curl_ntlm_core.c curl_ntlm_wb.c curl_path.c curl_range.c curl_rtmp.c        \
   curl_sasl.c curl_sspi.c curl_threads.c dict.c dotdot.c easy.c escape.c      \
   file.c fileinfo.c formdata.c ftp.c url.c ftplistparser.c getenv.c getinfo.c \
-  gopher.c hash.c hmac.c hostasyn.c hostcheck.c hostip.c hostip4.c hostip6.c  \
-  hostsyn.c http.c http2.c http_chunks.c http_digest.c http_negotiate.c       \
-  http_ntlm.c http_proxy.c idn_win32.c if2ip.c imap.c inet_ntop.c inet_pton.c \
-  krb5.c ldap.c llist.c md4.c md5.c memdebug.c mime.c mprintf.c mqtt.c        \
-  multi.c netrc.c non-ascii.c nonblock.c openldap.c parsedate.c pingpong.c    \
-  pop3.c progress.c psl.c doh.c rand.c rename.c rtsp.c select.c               \
-  sendf.c setopt.c sha256.c share.c slist.c smb.c smtp.c socketpair.c socks.c \
-  socks_gssapi.c socks_sspi.c speedcheck.c splay.c strcase.c strdup.c         \
-  strerror.c strtok.c strtoofft.c system_win32.c telnet.c tftp.c timeval.c    \
-  transfer.c urlapi.c version.c warnless.c wildcard.c x509asn1.c dynbuf.c     \
-  version_win32.c easyoptions.c easygetopt.c hsts.c
+  gemini.c gopher.c hash.c hmac.c hostasyn.c hostcheck.c hostip.c hostip4.c   \
+  hostip6.c hostsyn.c http.c http2.c http_chunks.c http_digest.c              \
+  http_negotiate.c http_ntlm.c http_proxy.c idn_win32.c if2ip.c imap.c        \
+  inet_ntop.c inet_pton.c krb5.c ldap.c llist.c md4.c md5.c memdebug.c mime.c \
+  mprintf.c mqtt.c multi.c netrc.c non-ascii.c nonblock.c openldap.c          \
+  parsedate.c pingpong.c pop3.c progress.c psl.c doh.c rand.c rename.c rtsp.c \
+  select.c sendf.c setopt.c sha256.c share.c slist.c smb.c smtp.c             \
+  socketpair.c socks.c socks_gssapi.c socks_sspi.c speedcheck.c splay.c       \
+  strcase.c strdup.c strerror.c strtok.c strtoofft.c system_win32.c telnet.c  \
+  tftp.c timeval.c transfer.c urlapi.c version.c warnless.c wildcard.c        \
+  x509asn1.c dynbuf.c version_win32.c easyoptions.c easygetopt.c hsts.c
 
 LIB_HFILES = altsvc.h amigaos.h arpa_telnet.h asyn.h conncache.h connect.h    \
   content_encoding.h cookie.h curl_addrinfo.h curl_base64.h curl_ctype.h      \
@@ -71,8 +71,8 @@ LIB_HFILES = altsvc.h amigaos.h arpa_telnet.h asyn.h conncache.h connect.h    \
   curl_printf.h curl_range.h curl_rtmp.h curl_sasl.h curl_krb5.h curl_setup.h \
   curl_setup_once.h curl_sha256.h curl_sspi.h curl_threads.h curlx.h dict.h   \
   dotdot.h easyif.h escape.h file.h fileinfo.h formdata.h ftp.h url.h         \
-  ftplistparser.h getinfo.h gopher.h hash.h hostcheck.h hostip.h http.h       \
-  http2.h http_chunks.h http_digest.h http_negotiate.h http_ntlm.h            \
+  ftplistparser.h getinfo.h gemini.h gopher.h hash.h hostcheck.h hostip.h     \
+  http.h http2.h http_chunks.h http_digest.h http_negotiate.h http_ntlm.h     \
   http_proxy.h if2ip.h imap.h inet_ntop.h inet_pton.h llist.h memdebug.h      \
   mime.h mqtt.h multihandle.h multiif.h netrc.h non-ascii.h nonblock.h        \
   parsedate.h pingpong.h pop3.h progress.h psl.h doh.h quic.h rand.h rename.h \

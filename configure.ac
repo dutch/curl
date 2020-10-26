@@ -662,6 +662,23 @@ AC_HELP_STRING([--disable-mqtt],[Disable MQTT support]),
        AC_MSG_RESULT(no)
 )
 
+AC_MSG_CHECKING([whether to support gemini])
+AC_ARG_ENABLE(gemini,
+AC_HELP_STRING([--enable-gemini],[Enable Gemini support])
+AC_HELP_STRING([--disable-gemini],[Disable Gemini support]),
+[ case "$enableval" in
+  no)
+       AC_MSG_RESULT(no)
+       AC_DEFINE(CURL_DISABLE_GEMINI, 1, [to disable Gemini])
+       AC_SUBST(CURL_DISABLE_GEMINI, [1])
+       ;;
+  *)
+       AC_MSG_RESULT(yes)
+       ;;
+  esac ],
+       AC_MSG_RESULT(yes)
+)
+
 dnl **********************************************************************
 dnl Check for built-in manual
 dnl **********************************************************************
@@ -5114,6 +5131,9 @@ if test "x$CURL_DISABLE_GOPHER" != "x1"; then
 fi
 if test "x$CURL_DISABLE_MQTT" != "x1"; then
   SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS MQTT"
+fi
+if test "x$CURL_DISABLE_GEMINI" != "x1"; then
+  SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS GEMINI"
 fi
 if test "x$CURL_DISABLE_POP3" != "x1"; then
   SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS POP3"

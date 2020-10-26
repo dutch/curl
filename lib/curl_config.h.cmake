@@ -48,6 +48,9 @@
 /* to disable FTP */
 #cmakedefine CURL_DISABLE_FTP 1
 
+/* to disable GEMINI */
+#cmakedefine CURL_DISABLE_GEMINI 1
+
 /* to disable GOPHER */
 #cmakedefine CURL_DISABLE_GOPHER 1
 
