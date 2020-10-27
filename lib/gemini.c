@@ -34,6 +34,7 @@ static CURLcode gemini_do(struct connectdata *conn, bool *done);
 
 const struct Curl_handler Curl_handler_gemini = {
   "GEMINI",
+  ZERO_NULL,
   gemini_do,
   ZERO_NULL,
   ZERO_NULL,
@@ -55,6 +56,7 @@ const struct Curl_handler Curl_handler_gemini = {
 
 static CURLcode gemini_do(struct connectdata *conn, bool *done)
 {
+  *done = TRUE;
   fputs("Hello, world!\n", stderr);
   return CURLE_OK;
 }
